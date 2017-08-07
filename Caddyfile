@@ -1,0 +1,9 @@
+http://localhost:4000 {
+  errors stderr
+  log stdout
+  root public
+  internal /private
+  proxy /secure localhost:3000 {
+    transparent
+  }
+}
